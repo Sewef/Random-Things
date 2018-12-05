@@ -43,6 +43,12 @@ public class GuiAdvancedRedstoneRepeater extends GuiContainerBase
 
 		this.buttonList.add(new GuiButtonExt(2, this.guiLeft + 5, this.guiTop + 39, 10, 10, "-"));
 		this.buttonList.add(new GuiButtonExt(3, this.guiLeft + 5 + 70, this.guiTop + 39, 10, 10, "+"));
+		
+		this.delayOnTextField = new GuiTextField(8, this.fontRenderer, this.guiLeft + 5, this.guiTop + 15, 260, 20);
+		this.delayOffTextField = new GuiTextField(9, this.fontRenderer, this.guiLeft + 5 + 70, this.guiTop + 39, 260, 20);
+		
+		this.delayOnTextField.setText((ContainerTE<TileEntityAdvancedRedstoneRepeater>) inventorySlots).getTE().getTurnOnDelay());
+		this.delayOffTextField.setText((ContainerTE<TileEntityAdvancedRedstoneRepeater>) inventorySlots).getTE().getTurnOffDelay());
 	}
 
 	@Override
