@@ -75,4 +75,14 @@ public class TileEntityAdvancedRedstoneRepeater extends TileEntityBase
 	{
 		turnOffDelay = Math.min(10000, turnOffDelay + amount);
 	}
+	
+	public void setTurnOnDelay(int amount)
+	{
+		turnOnDelay = amount;
+	}
+	
+	public void setTurnOffDelay(int amount)
+	{
+		turnOffDelay = amount;
+	}
 }
